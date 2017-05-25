@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>testrangeJS</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      
+      <div class="container">
+      <header>
+            <h3>testrangeJS</h3> 
+            <p>understanding JavaScript is essential.</p> 
+      </header>
+      </div>
+      
+<hr>
+      
+      <div class="container">
+        <h1 reply="this is a custom attribute added to the DOM.">custom attributes</h1>
+          <p>we're just adding a custom attribute to the DOM. </p>
+          <p>check the h1 tag. here you find a attribute called reply. </p>
+          <p>this could be accesed via:  </p>
+          <p>$("h1").attr("reply")</p>
+      </div>
+      
+    <div class="container">
+        <h1 >global namespace</h1>
+          <p>is a space in the DOM where a object or variable could be stored. </p>
+            <p> but don't do it, because it will pollut the namespace.</p>
+         
+    </div>
+    
+    
+    <div class="container" ng-controller="basicController">
+          <h1>angular - the beginning</h1>
+        <p>this is a controller! </p>
+        <p>check app.js for added controller</p>
+    </div>
+      
+    
+    <div class="container" ng-controller="playController">
+        <h1>dependency injection</h1>
+        <p>scope injection</p>
+        
+    </div>
+      
+      
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="utility.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+      
+  </body>
+</html>
