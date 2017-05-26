@@ -8,7 +8,6 @@ nikitasApp.logPerson();*/
 
 
 //dependency injection
-
 //not good, if person changes, methode has to change
 /*var Person = function(firstname, lastname) {
     this.firstname = firstname;
@@ -50,11 +49,21 @@ app.controller('basicController', function() {
 app.controller('playController', function($scope){
     
     //adding values to $scope    
-    $scope.someValue = 'controller scope value';    
+    /*$scope.someValue = 'controller scope value';    
     $scope.anotherValue = 'barny';    
     $scope.getValues = function () {
         return 'return stuff';
     }    
     $scope.getValues();
-    console.log($scope);    
+    console.log($scope);    */
+});
+
+app.controller('anotherController', function($scope){
+    var model = {
+        task.name;
+        task.pId;
+    };
+    
+    $scope.model = model;
+    console.log($scope);
 });
