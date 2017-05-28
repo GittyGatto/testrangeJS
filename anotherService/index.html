@@ -6,20 +6,29 @@
     <body>
 
         <div class="container" ng-controller="controllerOne">
-            
+
             <ul>
                 <li ng-repeat="person in myService.personList">{{person.name}}, {{person.age}}</li>
             </ul>
+            <div  class="container">
+                <h4>new person</h4>
+                <p>name</p>
+                <input type="text" ng-model="name">
+                <p>age</p>
+                <input type="number" ng-model="age">
+
+                <button type="submit" ng-click="addPerson()">add</button>
+            </div>
         </div>
         <hr>
         <div class="container" ng-controller="controllerTwo">
-            
+
             <ul>
                 <li ng-repeat="person in myService.personList">{{person.name}}</li>
             </ul>
         </div>
 
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="app.js" type="text/javascript"></script>
